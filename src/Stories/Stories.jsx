@@ -11,6 +11,9 @@ const Stories = ( { stories, setStory } ) => {
         id={story.uri}
         key={story.uri}
         title={story.title}
+        byline={story.byline}
+        abstract={story.abstract}
+        url={story.url}
       />
     )
   })
