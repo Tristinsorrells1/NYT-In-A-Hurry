@@ -31,11 +31,15 @@ const setStory = (story) => {
   setSelectStory({story})
 }
 
+const resetStory = () => {
+  setSelectStory(undefined)
+}
+
   return (
     <>
       <h2>The New York Times in a Hurry</h2>
       {stories && !selectStory && <Stories stories={stories} setStory={setStory}/>}
-      {selectStory && <Details story={selectStory}/>}
+      {selectStory && <Details story={selectStory} resetStory={resetStory}/>}
     </>
   )
 }
