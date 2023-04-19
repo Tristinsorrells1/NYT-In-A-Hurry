@@ -1,25 +1,23 @@
 .story-container {
-  height: 25vh;
-  min-height: fit-content;
-  width: 32vw;
-  background-color: rgb(238, 220, 220);
+  height: 28vh;
+  overflow-y: auto;
+  background-image: url('./nyt.jpeg');
   color: black;
   text-align: left;
   display: flex;
   flex-direction: column;
+  background-size: cover;
 }
 
 .article-title {
   height: 80%;
   padding: 0;
-  margin-top: 8px;
   width: 95%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 7vh auto 0 auto;
 }
 
 .section-tag {
-  background-color: rgba(35, 42, 246, 0.656);
+  background-color: rgba(93, 93, 149, 0.656);
   border: 1px solid #000;
   border-radius: 4px;
   box-shadow: rgb(248, 245, 245) 4px 4px 0 0, #000 4px 4px 0 1px;

@@ -26,7 +26,7 @@
   position: absolute;
   top: 7vh;
   left: 20px;
-  background-color: rgba(112, 117, 249, 0.656);
+  background-color: rgba(93, 93, 149, 0.656);
   border: 1px solid #000;
   border-radius: 4px;
   color: rgb(238, 235, 235);
@@ -67,7 +67,7 @@
 }
 
 .tag {
-  background-color: rgb(112, 117, 249, 0.656);
+  background-color: rgba(93, 93, 149, 0.656);
   font-size: 12px;
   margin: 0 5px 10px 0;
   text-align: center;
