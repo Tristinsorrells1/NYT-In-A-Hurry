@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { getHomeStories } from "../APICalls/APICalls"
+import Stories from "../Stories/Stories"
 
 const Home = () => {
 const [stories, setStories] = useState(undefined)
@@ -19,11 +20,14 @@ useEffect(() => {
       }
     })
   }
+  console.log(stories)
 }, [stories])
 
-console.log(stories)
   return (
-    <h2>Home</h2>
+    <>
+      <h2>The New York Times in a Hurry</h2>
+      {stories && <Stories stories={stories}/>}
+    </>
   )
 }
 
