@@ -3,13 +3,12 @@ import "./Stories.css"
 
 const Stories = ( { stories, setStory } ) => {
 
-
   let topStories = stories.map((story) => {
     return ( 
       <Story
+        key={story.title}
         setStory={setStory}
-        id={story.uri}
-        key={story.uri}
+        id={story["short_url"].replace("https://nyti.ms/", "")}
         title={story.title}
         byline={story.byline}
         abstract={story.abstract}

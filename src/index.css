@@ -1,7 +1,8 @@
-main {
+html, main {
   height: 100vh;
   width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  border: 2px solid red;
+  background: rgb(18, 17, 17);
+  color: rgb(231, 224, 224);
 }

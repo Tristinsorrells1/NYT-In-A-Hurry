@@ -1,16 +1,14 @@
 import "./Story.css"
+import { useNavigate } from 'react-router-dom';
 
 
-const Story = ({id, key, title, setStory, byline, abstract, url, section}) => {
-
-const handleClick = (event) => {
-  setStory({id, title, key, byline, abstract, url, section })
-}
+const Story = ({id, title, section}) => {
+  const navigate = useNavigate();
 
   return (
-      <div className="story-container" onClick={((event) => handleClick(event))}>
-        <p>{title}</p>
-        <p>{section}</p>
+      <div className="story-container"  onClick={(() => navigate(`/${id}`))} key={id}>
+        <p className="article-title">{title}</p>
+        <p className="section-tag">{section}</p>
       </div>
   )
 }

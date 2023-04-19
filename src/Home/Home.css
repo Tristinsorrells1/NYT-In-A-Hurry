@@ -1,0 +1,39 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 10px 10px 10px;
+}
+
+.website-tagline {
+  font-style: italic;
+}
+
+.filter-dropdown {
+  background-color: rgba(93, 93, 149, 0.656);
+  border: 1px solid #000;
+  border-radius: 4px;
+  color: rgb(238, 235, 235);
+  font-size: 12px;
+  margin: 0 5px 10px 0;
+  text-align: center;
+  width: 50%;
+  align-self: center;
+}
+
+.title {
+  text-align: center;
+  margin: 0 0 -10px 0;
+}
+
+.loading,
+.error,
+.no-results {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 40vh;
+}
