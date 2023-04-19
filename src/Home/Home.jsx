@@ -3,6 +3,7 @@ import { getHomeStories } from "../APICalls/APICalls"
 import Stories from "../Stories/Stories"
 import Details from "../Details/Details"
 import { NavLink, useNavigate } from 'react-router-dom';
+import "./Home.css"
 
 const Home = () => {
 const navigate = useNavigate();
@@ -33,7 +34,7 @@ const setStory = (story) => {
   setSelectStory({story})
 }
 
-const resetStory = () => {
+ const resetStory = () => {
   setSelectStory(undefined)
 }
 
@@ -49,20 +50,22 @@ const filterStories = () => {
 
   return (
     <>
-    <h2>The New York Times in a Hurry</h2>
-    <p>See Only The Top Stories from Today</p>
-    <select id="filter" onChange={(() => filterStories())}>
-      <option>Filter By Category</option>
-      <option>Arts</option>
-      <option>Business</option>
-      <option>Climate</option>
-      <option>Crosswords</option>
-      <option>Opinion</option>
-      <option>Style</option>
-      <option>Technology</option>
-      <option>US</option>
-      <opion>World</opion>
-    </select>
+    <h2 className="title">The New York Times in a Hurry</h2>
+    { stories && !selectStory && <div className="header">
+      <p>See Only The Top Stories from Today</p>
+      <select className="filter-dropdown" id="filter" onChange={(() => filterStories())}>
+        <option>Filter By Category</option>
+        <option>Arts</option>
+        <option>Business</option>
+        <option>Climate</option>
+        <option>Crosswords</option>
+        <option>Opinion</option>
+        <option>Style</option>
+        <option>Technology</option>
+        <option>US</option>
+        <opion>World</opion>
+      </select>
+    </div>}
       {stories && !selectStory && <Stories stories={filteredStories} setStory={setStory}/>}
       {selectStory && <Details story={selectStory} resetStory={resetStory}/>}
       {!error && filteredStories && !filteredStories.length && <p> No Results </p>}

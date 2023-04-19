@@ -1,0 +1,25 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.filter-dropdown {
+  background-color: rgba(112, 117, 249, 0.656);
+  border: 1px solid #000;
+  border-radius: 4px;
+  color: rgb(238, 235, 235);
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 5px 10px 0;
+  text-align: center;
+  width: 50%;
+  align-self: center;
+}
+
+.title {
+  text-align: center;
+}

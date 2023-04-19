@@ -1,5 +1,6 @@
 const Details = ({ story, resetStory }) => {
 
+
   const handleClick = () => {
     resetStory()
   }

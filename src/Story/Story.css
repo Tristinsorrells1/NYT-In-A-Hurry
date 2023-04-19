@@ -1,5 +1,30 @@
 .story-container {
-  border: 2px solid pink;
-  height: 20vh;
-  width: 30vw;
+  height: 25vh;
+  min-height: fit-content;
+  width: 32vw;
+  background-color: rgb(220, 198, 198);
+  color: black;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-title {
+  height: 80%;
+  padding: 0;
+  margin-top: 8px;
+}
+
+.section-tag {
+  background-color: rgba(35, 42, 246, 0.656);
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: rgb(248, 245, 245) 4px 4px 0 0, #000 4px 4px 0 1px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 5px 10px 0;
+  text-align: center;
+  width: 65%;
+  align-self: center;
 }

@@ -9,8 +9,8 @@ const handleClick = (event) => {
 
   return (
       <div className="story-container" onClick={((event) => handleClick(event))}>
-        <p>{title}</p>
-        <p>{section}</p>
+        <p className="article-title">{title}</p>
+        <p className="section-tag">{section}</p>
       </div>
   )
 }
