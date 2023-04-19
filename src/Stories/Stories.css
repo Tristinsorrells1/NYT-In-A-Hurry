@@ -6,3 +6,8 @@
   grid-gap: 5px;
 }
 
+.article-title {
+  font-weight: bold;
+  font-style: italic;
+}
+

@@ -52,7 +52,7 @@ const filterStories = () => {
     <>
     <h2 className="title">The New York Times in a Hurry</h2>
     { stories && !selectStory && <div className="header">
-      <p>See Only The Top Stories from Today</p>
+      <p className="website-tagline">See Only The Top Stories from Today</p>
       <select className="filter-dropdown" id="filter" onChange={(() => filterStories())}>
         <option>Filter By Category</option>
         <option>Arts</option>
