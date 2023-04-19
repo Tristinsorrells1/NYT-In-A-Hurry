@@ -14,6 +14,7 @@ const Stories = ( { stories, setStory } ) => {
         byline={story.byline}
         abstract={story.abstract}
         url={story.url}
+        section={story.section.charAt(0).toUpperCase() + story.section.slice(1)}
       />
     )
   })
