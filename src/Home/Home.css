@@ -16,7 +16,6 @@
   border: 1px solid #000;
   border-radius: 4px;
   color: rgb(238, 235, 235);
-  display: inline-block;
   font-size: 12px;
   margin: 0 5px 10px 0;
   text-align: center;
@@ -27,4 +26,13 @@
 .title {
   text-align: center;
   margin: 0 0 -10px 0;
+}
+
+.loading,
+.error {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 40vh;
 }

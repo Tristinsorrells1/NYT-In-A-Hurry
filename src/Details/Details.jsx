@@ -1,7 +1,8 @@
 import { getHomeStories } from "../APICalls/APICalls"
 import { NavLink, useNavigate } from 'react-router-dom';
-import { useParams, useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react"
+import "./Details.css"
 
 const Details = ( ) => {
 const { id } = useParams()
@@ -35,20 +36,28 @@ useEffect(() => {
     navigate("/")
   }
 
+
   return (
-    <>
-    
-    <button onClick={(() => handleClick())}>Back</button>
-    {loading && <p>Loading ... </p>}
-    {error && <p>We're sorry, an error occured.</p>}
-    {!selectStory && !loading && <p>We're sorry, an error occured</p>}
-    {selectStory && <section>
-      <h2>{selectStory.title}</h2>
-      <p>{selectStory.abstract}</p>
-      <p>{selectStory.byline}</p>
-      <a href={selectStory.url}>Link to story</a>
-    </section>}
-    </>
+    <section className="details-section">
+      <button className="back-button" onClick={(() => handleClick())}>Back</button>
+      {loading && <p className="loading">Loading ... </p>}
+      {error && <p className="error">We're Sorry, an Error Occured.</p>}
+      {selectStory && <div className="title-and-author">
+        <h2 className="details-title">{selectStory.title}</h2>
+        <div className="article-details">
+          <p className="details-byline" >{selectStory.byline}</p>
+          <p className="details-byline" >{new Date(selectStory["published_date"]).toLocaleDateString('en-us')}</p>
+          {/* <p className="details-byline" >{selectStory.section.charAt(0).toUpperCase() + selectStory.section.slice(1)}</p> */}
+        </div>
+      </div>}
+      {selectStory && <p className="abstract">{selectStory.abstract} <a className="link" href={selectStory.url}> Read the Full Story</a></p>}
+      {selectStory && 
+        <div className="tag-container">
+          {selectStory["des_facet"].map((tag) => 
+            <p key={tag} className="tag">{tag}</p>
+          )}
+        </div>}
+    </section>
   )
 }
 
