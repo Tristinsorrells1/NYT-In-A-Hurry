@@ -5,13 +5,13 @@
   align-items: center;
   flex-direction: column;
   margin: 5px;
+  padding: 10px;
+  border: 2px solid grey;
 }
 
-
-.details-byline {
- background-color: grey;
+.details-title {
+  margin: 0;
 }
-
 
 .link {
   color: rgb(231, 224, 224);
@@ -20,6 +20,7 @@
 
 .article-details {
   display: flex;
+  margin-top: 8px;
 }
 
 .back-button {
@@ -32,7 +33,7 @@
   color: rgb(238, 235, 235);
   font-size: 12px;
   margin: 0 5px 10px 0;
-  width: 10%;
+  width: 15%;
 }
 
 .details-byline {
@@ -41,12 +42,13 @@
   box-shadow: rgb(248, 245, 245) 2px 2px 0 0, rgb(81, 75, 75) 2px 2px 0 1px;
   color: #fff;
   font-size: 12px;
-  margin: 4px;
   border: 1px solid white;
-  padding: 2px 5px 5px 2px;
+  padding: 5px 4px 4px 1px;
   height: 3vh;
+  max-width: 250px;
   overflow-y: scroll;
   display: flex;
+  margin: 5px 10px 0 0;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -61,7 +63,7 @@
 }
 
 .title-and-author {
-  margin-top: 10vh;
+  margin-top: 15vh;
   display: flex;
   flex-direction: column;
 }
@@ -71,7 +73,12 @@
   font-size: 12px;
   margin: 0 5px 10px 0;
   text-align: center;
-  width: 80%;
+  padding: 5px;
+  overflow-y: auto;
   align-self: center;
+}
+
+.abstract {
+  margin-top: 4vh;
 }
 

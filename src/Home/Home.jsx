@@ -53,15 +53,17 @@ const filterStories = () => {
         <option>Business</option>
         <option>Climate</option>
         <option>Crosswords</option>
+        <option>Health</option>
         <option>Opinion</option>
+        <option>Sports</option>
         <option>Style</option>
         <option>Technology</option>
         <option>US</option>
         <option>World</option>
       </select>
     </div>}
+    {!error && filteredStories && !filteredStories.length && <p className="no-results"> No Results </p>}
     {filteredStories && <Stories stories={filteredStories} />}
-    {!error && filteredStories && !filteredStories.length && <p> No Results </p>}
     </>
   )
 }
