@@ -1,7 +1,7 @@
 .story-container {
   height: 28vh;
   overflow-y: auto;
-  background-image: url('./nyt.jpeg');
+  background-image: url('/nyt.jpeg');
   color: black;
   text-align: left;
   display: flex;
