@@ -26,7 +26,6 @@ useEffect(() => {
         }
     })
   }
-  console.log("stories", stories)
 }, [stories])
 
 
@@ -45,7 +44,7 @@ const filterStories = () => {
     <h2 className="title">The New York Times in a Hurry</h2>
     {loading && <p className="loading">Loading ...</p>}
     {error && <p className="error">We're Sorry - An Error Occured</p>}
-    { stories && <div className="header">
+    {stories && <div className="header">
       <p className="website-tagline">See Only The Top Stories from Today</p>
       <select className="filter-dropdown" id="filter" onChange={(() => filterStories())}>
         <option>Filter By Category</option>

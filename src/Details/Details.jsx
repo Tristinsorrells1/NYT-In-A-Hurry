@@ -1,5 +1,5 @@
 import { getHomeStories } from "../APICalls/APICalls"
-import { NavLink, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react"
 import "./Details.css"
@@ -7,7 +7,6 @@ import "./Details.css"
 const Details = ( ) => {
 const { id } = useParams()
 const navigate = useNavigate();
-
 
 const [stories, setStories] = useState(undefined)
 const [loading, setLoading] = useState(false)
@@ -32,10 +31,9 @@ useEffect(() => {
   }
 }, [stories])
 
-  const handleClick = () => {
-    navigate("/")
-  }
-
+const handleClick = () => {
+  navigate("/")
+}
 
   return (
     <section className="details-section">
