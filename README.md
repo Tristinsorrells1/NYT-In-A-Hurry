@@ -22,7 +22,7 @@
 [Preview of App](#preview-of-app) |
 [Technologies](#technologies) |
 [Contributors](#contributors) |
-[Development Resources](#development-resources)
+[Project Board and Wireframe](#development-resources)
 
 </div>
 
@@ -32,7 +32,9 @@
 
 [//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
 
-This application allows users to quickly browse through only the top stories from the New York Time seach day. Users can filters the stories by category, for example, 'Arts' or 'Technology'. Users are also able to click on a story to see more details about it, and also be provided a link to read the full story on the New york Times website.
+Keep up with the news no matter where you are, what device you're using, or how little time you have to find stories.
+
+This application allows users to quickly browse through only the top stories from the New York Times that day. Users can filters the stories by category, such as 'Arts' or 'Technology', which improves the UX by allowing the user to find articles that cater to their specific interests. Users are able to click on a story to see more details about it, and also be provided a link to read the full story on the New York Times website. This website is fully responsive, providing an optimized browsing experience on desktop, mobile, and tablet devices. 
   
 </div>
 
@@ -55,13 +57,14 @@ This application allows users to quickly browse through only the top stories fro
   
 ## Deployed Link:
 
-This project hasn't deployed yet, stay tuned!
+[Visit the Deployed Site Here!](https://nyt-take-home.vercel.app/)
 
 ---
 
 ## Preview of App:
 [//]: <> (add gifs)
 
+<img width="961" alt="Screen Shot 2023-04-20 at 4 49 52 PM" src="https://user-images.githubusercontent.com/109977562/233495074-e6cfc4a2-91e7-4533-8c00-114314741961.png">
 
 
 
