@@ -4,9 +4,10 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  margin: 5px;
+  margin: 5px auto 0 auto;
   padding: 10px;
   border: 2px solid grey;
+  max-width: 900px;
 }
 
 .details-title {
@@ -26,7 +27,7 @@
 .back-button {
   position: absolute;
   top: 7vh;
-  left: 20px;
+  right: 75vw;
   background-color: rgba(93, 93, 149, 0.656);
   border: 1px solid #000;
   border-radius: 4px;
@@ -80,5 +81,16 @@
 
 .abstract {
   margin-top: 4vh;
+  max-width: 90%;
+  height: fit-content;
 }
 
+@media (min-width: 1000px) {
+ .abstract {
+  font-size: 20px;
+ }
+
+ .back-button {
+  right: 60vw;
+ }
+}

@@ -10,4 +10,21 @@
   font-weight: bold;
   font-style: italic;
 }
+@media (min-width: 1000px) {
+  .stories-section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .stories-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .stories-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 

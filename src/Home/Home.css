@@ -37,3 +37,23 @@
   text-align: center;
   margin-top: 40vh;
 }
+@media (min-width: 700px) {
+  .article-title {
+    font-size: 15px;
+    margin-top: 10vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  .article-title {
+    font-size: 20px;
+    margin-top: 12vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .article-title {
+    font-size: 20px;
+    margin-top: 10vh;
+  }
+}
