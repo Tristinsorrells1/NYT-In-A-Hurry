@@ -2,7 +2,6 @@ import Story from "../Story/Story"
 import "./Stories.css"
 
 const Stories = ( { stories, setStory } ) => {
-
   let topStories = stories.map((story) => {
     return ( 
       <Story
