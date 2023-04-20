@@ -103,4 +103,4 @@ This project hasn't deployed yet, stay tuned!
 
 ## Development Resources
 
-[Project Board](https://github.com/users/Tristinsorrells1/projects/8/settings) · [Wireframe](https://www.figma.com/file/Hx6UmKk1tqT6pVGAgSCW3H/NYT-Take-Home?node-id=0-1&t=x3xKX1KjiVORLKq9-0) 
+[Project Board](https://github.com/users/Tristinsorrells1/projects/8/views/1?layout=board) · [Wireframe](https://www.figma.com/file/Hx6UmKk1tqT6pVGAgSCW3H/NYT-Take-Home?node-id=0-1&t=x3xKX1KjiVORLKq9-0) 
