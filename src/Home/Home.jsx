@@ -15,8 +15,8 @@ useEffect(() => {
     setLoading(true)
     getHomeStories()
     .then((res) => {
+      setLoading(false)
         if (res.status === "OK") {
-          setLoading(false)
           setStories(res.results)
           setFilteredStories(res.results)
           setError(false)
