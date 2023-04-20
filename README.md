@@ -2,7 +2,7 @@
 
 <img src="https://www.parkinsonsmovement.com/wp-content/uploads/2016/12/newspaper-cartoon-clipart-4.jpg" width="120" height="120">
   
-# NYT-Take-Home
+# NYT In a Hurry
   
 
 </div>
